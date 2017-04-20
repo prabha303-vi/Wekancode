@@ -18,34 +18,25 @@ public class HomePagerAdapter extends FragmentPagerAdapter
     }
 
     @Override
-    public Fragment getItem(int position)
+    public Fragment getItem(int num)
     {
-        if(position == 0)
-        {
-            return new PostFragment();
+        switch (num){
+            case 0:
+                return new YouFragment();
+            default:
+                return new FollowingFragment();
         }
-        else
-        {
-            return new PeopleFragment();
-        }
+    }
+    @Override
+    public int getItemPosition(Object object) {
+        // Causes adapter to reload all Fragments when
+        // notifyDataSetChanged is called
+        return POSITION_NONE;
     }
 
     @Override
     public int getCount() {
         return 2;
-    }
-
-    @Override
-    public CharSequence getPageTitle(int position)
-    {
-        if(position == 0)
-        {
-            return "Post";
-        }
-        else
-        {
-            return "People";
-        }
     }
 }
 

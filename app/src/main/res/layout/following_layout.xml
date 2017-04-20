@@ -24,7 +24,8 @@
                 android:layout_gravity="top"
                 android:scaleType="centerCrop"
                 android:background="?android:attr/selectableItemBackground"
-                android:gravity="center"  />
+                android:gravity="center"
+                android:src="@drawable/myprofile" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
@@ -91,7 +92,7 @@
                         android:visibility="visible"
                         android:textSize="16sp"
                         android:text=" @prabha" />
-                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
 
 

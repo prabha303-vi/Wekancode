@@ -10,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     private FrameLayout mainLayout;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
         setDrawerUI();
         mainLayout = (FrameLayout) findViewById(R.id.content_main);

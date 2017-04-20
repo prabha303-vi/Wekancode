@@ -3,4 +3,12 @@
     <color name="colorPrimary">#303F9F</color>
     <color name="colorPrimaryDark">#3F51B5</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="gray5">#8297B2</color>
+    <color name="lgray1">#F3F6FA</color>
+    <color name="lgray2">#E6E9EE</color>
+    <color name="lgray3">#D2D6DD</color>
+    <color name="lgray4">#C8CDD6</color>
+    <color name="lgray5">#BDC1CA</color>
+    <color name="lgray6">#A9ADB5</color>
+    <color name="shadow">#cc222222</color>
 </resources>
