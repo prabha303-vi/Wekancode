@@ -1,24 +1,28 @@
 package sj.prabha.com.wekancode;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
+{
+    private FrameLayout mainLayout;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         setDrawerUI();
+        mainLayout = (FrameLayout) findViewById(R.id.content_main);
+        FragmentNavigator.navigateToFragment(this, new HomeFragment(), false, mainLayout.getId());
     }
     private void setDrawerUI(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -48,11 +52,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_profile) {
-
+        if (id == R.id.nav_home)
+        {
+            FragmentNavigator.navigateToFragment(this, new HomeFragment(), false, mainLayout.getId());
+        }
+        else if (id == R.id.nav_profile)
+        {
+            FragmentNavigator.navigateToFragment(this, new ProfileFragment(), true, mainLayout.getId());
         }
 
 
