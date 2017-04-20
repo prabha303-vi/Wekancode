@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,8 +41,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="@android:color/black"
                     android:layout_gravity="start"
-                    android:gravity="left"
-                    android:padding="6dp"
+                    android:gravity="start"
+                    android:padding="3dp"
                     android:text="RAJ"
                     android:textSize="14sp" />
                 <TextView
@@ -55,7 +54,6 @@
                     android:gravity="center"
                     android:textSize="14sp"
                     android:text=" prabha" />
-
                 <TextView
                     android:id="@+id/r_status_peson"
                     android:layout_width="wrap_content"
@@ -65,7 +63,6 @@
                     android:gravity="center"
                     android:textSize="16sp"
                     android:text=" @prabha" />
-
                 <LinearLayout
                     android:id="@+id/photo_cmt_layout"
                     android:layout_width="wrap_content"
@@ -93,11 +90,7 @@
                         android:text=" @prabha" />
                     </LinearLayout>
             </LinearLayout>
-
-
-
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -125,7 +118,6 @@
                 android:gravity="bottom"
                 android:src="@drawable/people_add" />
         </LinearLayout>
-
 
     </LinearLayout>
 

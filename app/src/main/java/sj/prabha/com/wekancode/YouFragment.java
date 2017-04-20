@@ -32,7 +32,6 @@ public class YouFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         JSONArray myArray = ExampleJsonArray.getYouList();
-
         if(myArray.length() != 0) {
             for (int i = 0; i < myArray.length(); i++) {
                 try {
@@ -42,7 +41,6 @@ public class YouFragment extends Fragment {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
             }
         }
         YouAdapter adapter = new YouAdapter(getContext(),you_list);
@@ -51,15 +49,5 @@ public class YouFragment extends Fragment {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),layoutManager.getOrientation());
         recyclerView.addItemDecoration(dividerItemDecoration);
         return view;
-    }
-
-
-
-    private void setJsonArray()
-    {
-
-
-
-
     }
 }
