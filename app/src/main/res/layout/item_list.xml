@@ -110,19 +110,20 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
+                android:visibility="visible"
                 android:background="?android:attr/selectableItemBackground"
                 android:gravity="center"
                 android:src="@drawable/myprofile" />
             <ImageView
                 android:id="@+id/add_image"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
                 android:scaleType="centerCrop"
                 android:visibility="gone"
                 android:background="?android:attr/selectableItemBackground"
-                android:gravity="center"
-                android:src="@drawable/myprofile" />
+                android:gravity="bottom"
+                android:src="@drawable/people_add" />
         </LinearLayout>
 
 

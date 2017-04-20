@@ -73,7 +73,7 @@ public class YouAdapter extends RecyclerView.Adapter<YouAdapter.MyViewHolder>
         }else{
             holder.liked_image.setVisibility(View.GONE);
             holder.add_image.setVisibility(View.VISIBLE);
-            holder.add_image.setImageResource(R.drawable.ic_menu_share);
+            holder.add_image.setImageResource(R.drawable.people_add);
         }
     }
     @Override
