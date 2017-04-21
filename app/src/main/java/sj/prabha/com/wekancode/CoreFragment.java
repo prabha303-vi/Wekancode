@@ -52,7 +52,6 @@ public class CoreFragment extends Fragment {
         vertical.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                grid.setFocusable(false);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
             }
         });
