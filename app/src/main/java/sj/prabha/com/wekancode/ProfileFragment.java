@@ -28,11 +28,10 @@ public class ProfileFragment extends Fragment implements MaterialTabListener {
     {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         setUi(view);
-
         return view;
     }
-
     private void setUi(View view){
+        getActivity().setTitle("Profile");
         tabHost = (MaterialTabHost) view.findViewById(R.id.tabHost);
         pager = (ViewPager) view.findViewById(R.id.view_pager);
         pagerAdapter = new ProfilePagerAdapter(getContext(), getChildFragmentManager());

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setDrawerUI();
         mainLayout = (FrameLayout) findViewById(R.id.content_main);
+        // TODO setting HomeFragment AND TABS
         FragmentNavigator.navigateToFragment(this, new HomeFragment(), false, mainLayout.getId());
     }
     private void setDrawerUI(){
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        // TODO Handle navigation view item clicks here.
         int id = item.getItemId();
         if (id == R.id.nav_home)
         {
@@ -63,8 +64,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         {
             FragmentNavigator.navigateToFragment(this, new ProfileFragment(), true, mainLayout.getId());
         }
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

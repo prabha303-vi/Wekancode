@@ -148,12 +148,12 @@
                             android:layout_height="match_parent"
                             android:textColor="@android:color/darker_gray"
                             android:layout_gravity="left"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
                             android:layout_marginBottom="5dp"
                             android:gravity="center"
                             android:padding="5dp"
                             android:textSize="18sp"
-                            android:text="MORE" />
+                            android:text="More" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

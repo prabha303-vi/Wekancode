@@ -23,9 +23,10 @@ public class HomePagerAdapter extends FragmentPagerAdapter
         switch (num){
             case 0:
                 return new YouFragment();
-            default:
+            case 1:
                 return new FollowingFragment();
         }
+        return null;
     }
     @Override
     public int getItemPosition(Object object) {

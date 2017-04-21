@@ -16,11 +16,6 @@ public class FragmentNavigator {
     public static void navigateToFragment(AppCompatActivity coreActivity, Fragment coreFragment, boolean addToBackStack, int viewId) {
         navigateToFragment(coreActivity, coreFragment, addToBackStack, viewId, false, false);
     }
-
-    public static void navigateToFragment(AppCompatActivity coreActivity, Fragment coreFragment, boolean addToBackStack, int viewId, boolean isAnimate) {
-        navigateToFragment(coreActivity, coreFragment, addToBackStack, viewId, false, isAnimate);
-    }
-
     public static void navigateToFragment(AppCompatActivity coreActivity, Fragment coreFragment, boolean addToBackStack, int viewId, boolean isAdd, boolean isAnimate)
     {
         FragmentManager fragmentManager = coreActivity.getSupportFragmentManager();
@@ -29,7 +24,6 @@ public class FragmentNavigator {
         {
             fragmentTransaction.setCustomAnimations(R.anim.anim_slide_in_left, R.anim.anim_slide_out_left, R.anim.anim_slide_in_right, R.anim.anim_slide_out_right);
         }*/
-
         if (!coreFragment.isAdded())
         {
             if (isAdd) {
@@ -47,58 +41,6 @@ public class FragmentNavigator {
             fragmentTransaction.show(coreFragment);
         }
         fragmentTransaction.commitAllowingStateLoss();
-        fragmentManager.executePendingTransactions();
-    }
-
-    public static void removeFragments(AppCompatActivity coreActivity)
-    {
-        FragmentManager fragmentManager = coreActivity.getSupportFragmentManager();
-        List<Fragment> fragmentList = fragmentManager.getFragments();
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        for(Fragment fragment : fragmentList)
-        {
-            fragmentTransaction.remove(fragment);
-        }
-
-        fragmentTransaction.commitAllowingStateLoss();
-        fragmentManager.executePendingTransactions();
-    }
-
-    public static void removeFragments(AppCompatActivity coreActivity, int viewId) {
-        coreActivity.getSupportFragmentManager().beginTransaction().remove(coreActivity.getSupportFragmentManager().findFragmentById(viewId)).commit();
-
-    }
-
-    public static void removeFragments(Fragment coreFragment, int viewId) {
-        coreFragment.getChildFragmentManager().beginTransaction().remove(coreFragment.getChildFragmentManager().findFragmentById(viewId)).commit();
-
-    }
-
-    public static void placeFragment(Fragment parentFragment, Fragment coreFragment, int viewId)
-    {
-        FragmentManager fragmentManager = parentFragment.getChildFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        if (!coreFragment.isAdded())
-        {
-            fragmentTransaction.replace(viewId, coreFragment, coreFragment.getClass().getSimpleName());
-        }
-        fragmentTransaction.commit();
-        fragmentManager.executePendingTransactions();
-    }
-
-    public static void placeFragment(AppCompatActivity coreActivity, Fragment coreFragment, int viewId)
-    {
-        FragmentManager fragmentManager = coreActivity.getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        if (!coreFragment.isAdded())
-        {
-            fragmentTransaction.replace(viewId, coreFragment, coreFragment.getClass().getSimpleName());
-        }
-        fragmentTransaction.commit();
         fragmentManager.executePendingTransactions();
     }
 }

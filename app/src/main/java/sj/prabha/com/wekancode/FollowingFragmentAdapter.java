@@ -23,7 +23,6 @@ public class FollowingFragmentAdapter extends RecyclerView.Adapter<FollowingFrag
         this.context = context;
         this.following_list = following_list;
     }
-
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView r_name,r_time,r_status_peson,photo_cmt; CircleImageView vehicle_image; ImageView liked_image,liked_image1,liked_image2,liked_image3,liked_image4;
         LinearLayout liked_image_fourLayout,liked_image_oneLayout,photo_cmt_layout;
@@ -75,9 +74,7 @@ public class FollowingFragmentAdapter extends RecyclerView.Adapter<FollowingFrag
             holder.photo_cmt_layout.setVisibility(View.VISIBLE);
             holder.photo_cmt.setText(following_list.get(position).getPhotoComment());
         }
-
     }
-
     @Override
     public int getItemCount()
     {

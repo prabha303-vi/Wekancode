@@ -31,6 +31,7 @@ public class HomeFragment extends Fragment implements MaterialTabListener {
         return view;
     }
     private void setUi(View view){
+        getActivity().setTitle("Home");
         tabHost = (MaterialTabHost) view.findViewById(R.id.tabHost);
         pager = (ViewPager) view.findViewById(R.id.view_pager);
         pagerAdapter = new HomePagerAdapter(getContext(), getChildFragmentManager());

@@ -10,6 +10,7 @@ import org.json.JSONObject;
 
 public class ExampleJsonArray {
 
+    // TODO getting JsonArray Following List
     public static JSONArray getFollowingList() {
         JSONArray jsonArray = new JSONArray();
         try {
@@ -21,16 +22,16 @@ public class ExampleJsonArray {
             JSONObject you6 = new JSONObject();
 
             you1.put("id", "1");
-            you1.put("name", "gautam_gambhir");
-            you1.put("dateTime", "Today 8:10");
+            you1.put("name", "Virat Kohli");
+            you1.put("dateTime", "Today 10:10");
             you1.put("personStatus", "Liked 4 photos");
-            you1.put("photoComment", "");
+            you1.put("photoComment", "#good collections");
             you1.put("photoCouunt",4);
             you1.put("photo", R.drawable.elephant);
 
             you2.put("id", "2");
-            you2.put("name", "miller_killer");
-            you2.put("dateTime", "Today 8:10");
+            you2.put("name", "AB de_villiers");
+            you2.put("dateTime", "Yesterday 8:10");
             you2.put("personStatus", "good text");
             you2.put("photoComment", "#amazing");
             you2.put("photoCouunt",0);
@@ -38,16 +39,16 @@ public class ExampleJsonArray {
 
             you3.put("id", "3");
             you3.put("name", "buttler_eng");
-            you3.put("dateTime", "Today 8:10");
-            you3.put("personStatus", "Liked 4 photos");
+            you3.put("dateTime", "Today 09:10");
+            you3.put("personStatus", "Liked 1 photos");
             you3.put("photoComment", "#nice");
             you3.put("photoCouunt",1);
             you3.put("photo", R.drawable.lion);
 
             you4.put("id", "4");
             you4.put("name", "eion morgan");
-            you4.put("dateTime", "Today 8:10");
-            you4.put("personStatus", "Liked 4 photos");
+            you4.put("dateTime", "Yesterday 8:10");
+            you4.put("personStatus", "Liked 3 photos");
             you4.put("photoComment", "");
             you4.put("photoCouunt",4);
             you4.put("photo", R.drawable.myprofile);
@@ -61,15 +62,12 @@ public class ExampleJsonArray {
             you5.put("photo", R.drawable.pro_sj1);
 
             you6.put("id", "6");
-            you6.put("name", "rohit_sharma");
-            you6.put("dateTime", "Today 8:10");
-            you6.put("personStatus", "Liked 4 photos");
+            you6.put("name", "Samuel_badree");
+            you6.put("dateTime", "Yesterday 8:10");
+            you6.put("personStatus", "Liked 3 photos");
             you6.put("photoComment", "");
             you6.put("photoCouunt",1);
             you6.put("photo", R.drawable.myprofile);
-
-
-
 
             jsonArray.put(you1);
             jsonArray.put(you2);
@@ -82,7 +80,7 @@ public class ExampleJsonArray {
         }
         return jsonArray;
     }
-
+    // TODO getting JsonArray Following List
     public static JSONArray getYouList() {
         JSONArray jsonArray = new JSONArray();
         try {
@@ -158,14 +156,14 @@ public class ExampleJsonArray {
             you7.put("photo", R.drawable.lion);
             you7.put("likedImage", R.drawable.dog);
 
-
+            jsonArray.put(you7);
             jsonArray.put(you1);
             jsonArray.put(you2);
             jsonArray.put(you3);
             jsonArray.put(you4);
             jsonArray.put(you5);
             jsonArray.put(you6);
-            jsonArray.put(you7);
+
         }catch (Exception e){
             e.printStackTrace();
         }
