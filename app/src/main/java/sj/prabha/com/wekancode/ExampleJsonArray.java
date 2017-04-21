@@ -20,59 +20,56 @@ public class ExampleJsonArray {
             JSONObject you5 = new JSONObject();
             JSONObject you6 = new JSONObject();
 
-            you1.put("id", "3");
-            you1.put("name", "Siva Shive");
+            you1.put("id", "1");
+            you1.put("name", "gautam_gambhir");
             you1.put("dateTime", "Today 8:10");
             you1.put("personStatus", "Liked 4 photos");
-            you1.put("message", "");
-            you1.put("photo", R.drawable.tiger);
-            you1.put("likedImage", 0);
+            you1.put("photoComment", "");
+            you1.put("photoCouunt",4);
+            you1.put("photo", R.drawable.elephant);
 
-            you2.put("id", "3");
-            you2.put("name", "Siva Shive");
+            you2.put("id", "2");
+            you2.put("name", "miller_killer");
             you2.put("dateTime", "Today 8:10");
-            you2.put("personStatus", "Liked 4 photos");
-            you2.put("active", "N");
-            you2.put("message", "");
-            you2.put("photo", R.drawable.tiger);
-            you2.put("likedImage", 0);
+            you2.put("personStatus", "good text");
+            you2.put("photoComment", "#amazing");
+            you2.put("photoCouunt",0);
+            you2.put("photo", R.drawable.cat);
 
             you3.put("id", "3");
-            you3.put("name", "Siva Shive");
+            you3.put("name", "buttler_eng");
             you3.put("dateTime", "Today 8:10");
             you3.put("personStatus", "Liked 4 photos");
-            you3.put("active", "N");
-            you3.put("message", "");
-            you3.put("photo", R.drawable.tiger);
-            you3.put("likedImage", 0);
+            you3.put("photoComment", "#nice");
+            you3.put("photoCouunt",1);
+            you3.put("photo", R.drawable.lion);
 
-            you4.put("id", "3");
-            you4.put("name", "Siva Shive");
+            you4.put("id", "4");
+            you4.put("name", "eion morgan");
             you4.put("dateTime", "Today 8:10");
             you4.put("personStatus", "Liked 4 photos");
-            you4.put("active", "N");
-            you4.put("message", "");
+            you4.put("photoComment", "");
+            you4.put("photoCouunt",4);
+            you4.put("photo", R.drawable.myprofile);
 
-            you4.put("photo", R.drawable.tiger);
-            you4.put("likedImage", 0);
-
-            you5.put("id", "3");
-            you5.put("name", "Siva Shive");
+            you5.put("id", "5");
+            you5.put("name", "parthiv patel");
             you5.put("dateTime", "Today 8:10");
             you5.put("personStatus", "Liked 4 photos");
-            you5.put("active", "N");
-            you5.put("message", "");
-            you5.put("photo", R.drawable.tiger);
-            you5.put("likedImage", 0);
+            you5.put("photoComment", "");
+            you5.put("photoCouunt",0);
+            you5.put("photo", R.drawable.pro_sj1);
 
-            you6.put("id", "3");
-            you6.put("name", "Siva Shive");
+            you6.put("id", "6");
+            you6.put("name", "rohit_sharma");
             you6.put("dateTime", "Today 8:10");
             you6.put("personStatus", "Liked 4 photos");
-            you6.put("active", "N");
-            you6.put("message", "");
-            you6.put("photo", R.drawable.tiger);
-            you6.put("likedImage", 0);
+            you6.put("photoComment", "");
+            you6.put("photoCouunt",1);
+            you6.put("photo", R.drawable.myprofile);
+
+
+
 
             jsonArray.put(you1);
             jsonArray.put(you2);
@@ -104,7 +101,7 @@ public class ExampleJsonArray {
             you1.put("active", "N");
             you1.put("photoComment", "");
             you1.put("photo", R.drawable.pro_sj1);
-            you1.put("likedImage", 0);
+            you1.put("likedImage", R.drawable.cat);
 
             you2.put("id", "2");
             you2.put("name", "Sathish kumar");
@@ -113,7 +110,7 @@ public class ExampleJsonArray {
             you2.put("active", "Y");
             you2.put("photoComment", "good look!");
             you2.put("photo", R.drawable.myprofile);
-            you2.put("likedImage", R.drawable.sj1);
+            you2.put("likedImage", R.drawable.dog);
 
             you3.put("id", "3");
             you3.put("name", "Prabhagaran");
@@ -122,7 +119,7 @@ public class ExampleJsonArray {
             you3.put("active", "Y");
             you3.put("photoComment", "");
             you3.put("photo", R.drawable.cat);
-            you3.put("likedImage", R.drawable.tiger);
+            you3.put("likedImage", R.drawable.pro_sj1);
 
             you4.put("id", "4");
             you4.put("name", "mike_krag");
@@ -131,7 +128,7 @@ public class ExampleJsonArray {
             you4.put("active", "Y");
             you4.put("photoComment", "nice move!");
             you4.put("photo", R.drawable.lion);
-            you4.put("likedImage", R.drawable.sj2);
+            you4.put("likedImage", R.drawable.elephant);
 
             you5.put("id", "5");
             you5.put("name", "chir.marina");
@@ -159,7 +156,7 @@ public class ExampleJsonArray {
             you7.put("active", "Y");
             you7.put("photoComment", "looking nice!");
             you7.put("photo", R.drawable.lion);
-            you7.put("likedImage", R.drawable.sj2);
+            you7.put("likedImage", R.drawable.dog);
 
 
             jsonArray.put(you1);

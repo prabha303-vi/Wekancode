@@ -43,8 +43,6 @@ public class HomeFragment extends Fragment implements MaterialTabListener {
         });
         tabHost.addTab(tabHost.newTab().setText(getResources().getString(R.string.you)).setTabListener(this));
         tabHost.addTab(tabHost.newTab().setText(getResources().getString(R.string.following)).setTabListener(this));
-        pagerAdapter = new HomePagerAdapter(getContext(), getChildFragmentManager());
-        pager.setAdapter(pagerAdapter);
     }
 
     @Override

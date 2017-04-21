@@ -7,7 +7,8 @@
 
 
     <string name="you">You</string>
-    <string name="following">following</string>
-
+    <string name="following">Following</string>
+    <string name="post">Post</string>
+    <string name="followers">Followers</string>
 
 </resources>

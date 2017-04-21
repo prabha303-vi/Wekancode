@@ -5,6 +5,23 @@ package sj.prabha.com.wekancode;
  */
 public class FollowingPage {
 
+    String id;
+    String name;
+    String  dateTime;
+    String  personStatus;
+
+    public String getPhotoComment() {
+        return photoComment;
+    }
+
+    public void setPhotoComment(String photoComment) {
+        this.photoComment = photoComment;
+    }
+
+    String  photoComment;
+    int photoCouunt;
+    int photo;
+
     public String getId() {
         return id;
     }
@@ -37,20 +54,12 @@ public class FollowingPage {
         this.personStatus = personStatus;
     }
 
-    public String getActive() {
-        return active;
+    public int getPhotoCouunt() {
+        return photoCouunt;
     }
 
-    public void setActive(String active) {
-        this.active = active;
-    }
-
-    public String getPhotoComment() {
-        return photoComment;
-    }
-
-    public void setPhotoComment(String photoComment) {
-        this.photoComment = photoComment;
+    public void setPhotoCouunt(int photoCouunt) {
+        this.photoCouunt = photoCouunt;
     }
 
     public int getPhoto() {
@@ -61,12 +70,8 @@ public class FollowingPage {
         this.photo = photo;
     }
 
-    String  id;
-    String  name;
-    String  dateTime;
-    String  personStatus;
-    String  active;
-    String  photoComment;
-    int photo;
+
+
+
 
 }

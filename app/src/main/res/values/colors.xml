@@ -11,4 +11,6 @@
     <color name="lgray5">#BDC1CA</color>
     <color name="lgray6">#A9ADB5</color>
     <color name="shadow">#cc222222</color>
+    <color name="grey_bg">#333333</color>
+    <color name="white">#FFFFFF</color>
 </resources>

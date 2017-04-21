@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -23,15 +26,37 @@
                 android:layout_height="60dp"
                 android:layout_gravity="top"
                 android:scaleType="centerCrop"
-                android:background="?android:attr/selectableItemBackground"
                 android:gravity="center"
-                android:src="@drawable/myprofile" />
+                /> <!--android:src="@drawable/myprofile"-->
         </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:orientation="vertical">
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -44,7 +69,7 @@
                     android:textColor="@android:color/black"
                     android:layout_gravity="start"
                     android:gravity="left"
-                    android:padding="6dp"
+                    android:padding="4dp"
                     android:text="RAJ"
                     android:textSize="14sp" />
                 <TextView
@@ -94,39 +119,100 @@
                         android:text=" @prabha" />
                 </LinearLayout>
             </LinearLayout>
-
-
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/liked_image_oneLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:visibility="gone"
+            android:orientation="vertical">
             <ImageView
                 android:id="@+id/liked_image"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
-                android:background="?android:attr/selectableItemBackground"
-                android:gravity="center"
-                android:src="@drawable/myprofile" />
-            <ImageView
-                android:id="@+id/add_image"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:scaleType="centerCrop"
-                android:visibility="gone"
-                android:background="?android:attr/selectableItemBackground"
                 android:gravity="center"
                 android:src="@drawable/myprofile" />
         </LinearLayout>
+        </LinearLayout>
 
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liked_image_fourLayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/liked_image1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/myprofile" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/liked_image2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                android:src="@drawable/myprofile" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/liked_image3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/myprofile" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/liked_image4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:gravity="center"
+                android:src="@drawable/myprofile" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="horizontal" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </LinearLayout>
