@@ -42,7 +42,6 @@
                     android:textColor="@android:color/black"
                     android:layout_gravity="start"
                     android:gravity="start"
-                    android:padding="3dp"
                     android:text="RAJ"
                     android:textSize="14sp" />
                 <TextView
@@ -105,8 +104,7 @@
                 android:scaleType="centerCrop"
                 android:visibility="visible"
                 android:background="?android:attr/selectableItemBackground"
-                android:gravity="center"
-                android:src="@drawable/myprofile" />
+                android:gravity="center" />
             <ImageView
                 android:id="@+id/add_image"
                 android:layout_width="40dp"

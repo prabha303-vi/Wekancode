@@ -95,8 +95,8 @@ public class ExampleJsonArray {
             JSONObject you7 = new JSONObject();
 
             you1.put("id", "1");
-            you1.put("name", "Siva Shive");
-            you1.put("dateTime", "Today 8:10");
+            you1.put("name", "gautam_gambhir");
+            you1.put("dateTime", "Today 10:10");
             you1.put("personStatus", "Started following You");
             you1.put("active", "N");
             you1.put("photoComment", "");
@@ -104,8 +104,8 @@ public class ExampleJsonArray {
             you1.put("likedImage", R.drawable.cat);
 
             you2.put("id", "2");
-            you2.put("name", "Sathish kumar");
-            you2.put("dateTime", "Today 6:10");
+            you2.put("name", "Manish pandey");
+            you2.put("dateTime", "Yesterday 6:10");
             you2.put("personStatus", "Liked your photo");
             you2.put("active", "Y");
             you2.put("photoComment", "good look!");
@@ -113,8 +113,8 @@ public class ExampleJsonArray {
             you2.put("likedImage", R.drawable.dog);
 
             you3.put("id", "3");
-            you3.put("name", "Prabhagaran");
-            you3.put("dateTime", "Today 8:10");
+            you3.put("name", "Robin uthappa");
+            you3.put("dateTime", "Yesterday 8:10");
             you3.put("personStatus", "Liked your photo");
             you3.put("active", "Y");
             you3.put("photoComment", "");
@@ -122,8 +122,8 @@ public class ExampleJsonArray {
             you3.put("likedImage", R.drawable.pro_sj1);
 
             you4.put("id", "4");
-            you4.put("name", "mike_krag");
-            you4.put("dateTime", "Today 8:10");
+            you4.put("name", "Suryakumar_yadav");
+            you4.put("dateTime", "Yesterday 8:10");
             you4.put("personStatus", "Liked your photo");
             you4.put("active", "Y");
             you4.put("photoComment", "nice move!");
@@ -131,8 +131,8 @@ public class ExampleJsonArray {
             you4.put("likedImage", R.drawable.elephant);
 
             you5.put("id", "5");
-            you5.put("name", "chir.marina");
-            you5.put("dateTime", "Today 8:10");
+            you5.put("name", "Yusuf_pathan");
+            you5.put("dateTime", "Yesterday 8:10");
             you5.put("personStatus", "Started following You");
             you5.put("active", "N");
             you5.put("photoComment", "");
@@ -140,8 +140,8 @@ public class ExampleJsonArray {
             you5.put("likedImage", 0);
 
             you6.put("id", "6");
-            you6.put("name", "Santhosh");
-            you6.put("dateTime", "Today 8:10");
+            you6.put("name", "Ishank_jaggi");
+            you6.put("dateTime", "Yesterday 8:10");
             you6.put("personStatus", "Started following You");
             you6.put("active", "N");
             you6.put("photoComment", "");
@@ -151,7 +151,7 @@ public class ExampleJsonArray {
 
             you7.put("id", "7");
             you7.put("name", "Magesh_puvi");
-            you7.put("dateTime", "Today 8:10");
+            you7.put("dateTime", "Yesterday 8:10");
             you7.put("personStatus", "Started following..");
             you7.put("active", "Y");
             you7.put("photoComment", "looking nice!");
